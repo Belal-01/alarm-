@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "eZs_1JGJBa7Dj7XjM",
+      });
+   })();
+</script>
+  <title>Email Verification</title>
+</head>
+<body>
+
+  <section class="email-Verificatin">
+    <div class="clock"> 12 : 30 :40 AM</div>
+    <!--Contact form -->
+    <span >Create a new alarm </span>
+    <form id="emailForm">
+      <label for="email">Time:</label>
+      <input type="time" id="time" name="useralarm" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Email" name="useEmail" required>
+     
+      <button>Submit</button>
+    </form>
+
+
+    <!-- Notification Modle -->
+     <div id="overly" class="overly hide-overly"></div>
+    <div id="notfi" class="notification ">
+      <div class="notification-message">
+        Your alarm has been called
+      </div>
+      <div class="notification-button">
+        <button id="notfi-btn">
+          Close
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
