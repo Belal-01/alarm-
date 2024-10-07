@@ -2,6 +2,23 @@ body{
   font-family:Arial, Helvetica, sans-serif;
   background-color: #a06a2498;
 }
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  color:white;
+}
+
+.navbar{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: bold;
+  transition: color .5s ease;
+  }
 .email-Verificatin{
  width: 100%;
  height:600px;
@@ -11,6 +28,7 @@ body{
  align-items: center;
 
 }
+
 .email-Verificatin form{
   width: 400px;
   padding:15px 10px;
